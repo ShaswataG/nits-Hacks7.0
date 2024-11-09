@@ -34,10 +34,10 @@ const Welcome = () => {
           height: "100%",
         }}
       >
-        <View className="w-full flex justify-center items-center h-full px-4">
+        <View className="w-100% flex justify-center items-center h-full">
           <Image
             source={images.logo}
-            className="w-[130px] h-[84px]"
+            className="w-[300px] h-[64px] my-10"
             resizeMode="contain"
           />
 
@@ -48,20 +48,17 @@ const Welcome = () => {
           />
 
           <View className="relative mt-5">
-            <Text className="text-xl text-white font-bold text-center">
+            <Text className="text-xl text-white font-bold text-center my-3">
               Empowering Healthy Screen Time{"\n"}
-              Focus, Learn, and Grow! with{"\n "}
-              <Text className="text-secondary-200 text-3xl">BriteTime</Text>
+              Focus, Learn, and Grow with{"\n"}
             </Text>
 
-            <Image
-              source={images.path}
-              className="h-[15px] absolute -bottom-2 -right-8"
-              resizeMode="contain"
-            />
+            <Text className="text-secondary font-bold text-center text-3xl">
+              BriteTime!
+            </Text>
           </View>
 
-          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
+          <Text className="text-sm font-pregular text-gray-100 my-7 text-center">
             Fostering Balanced Screen Time: Focus, Play, and Thrive! Unlock a
             World of Learning and Growth!
           </Text>

@@ -34,7 +34,7 @@ const TabLayout = () => {
     <>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: "#FFA001",
+          tabBarActiveTintColor: "#04c0fb",
           tabBarInactiveTintColor: "#CDCDE0",
           tabBarShowLabel: false,
           tabBarStyle: {
@@ -91,6 +91,23 @@ const TabLayout = () => {
             ),
           }}
         />
+
+        <Tabs.Screen
+          name="focus"
+          options={{
+            title: "Focus",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.clock}
+                color={color}
+                name="Focus"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+
         <Tabs.Screen
           name="profile"
           options={{
